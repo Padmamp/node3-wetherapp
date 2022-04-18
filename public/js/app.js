@@ -1,5 +1,3 @@
-//const express = require('express')
-
 console.log('Use this site to get your weather')
 
 const weatherForm = document.querySelector('form')
