@@ -3,6 +3,8 @@ const path = require('path')
 const hbs = require('hbs')
 const request = require('postman-request')
 
+const port = process.env.port || 3000
+
 const geocode = require('./utils/geocode')
 const forecst = require('./utils/forecast')
 const { rmSync } = require('fs')
@@ -90,6 +92,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port '+ port)
 })
