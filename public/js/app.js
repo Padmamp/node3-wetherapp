@@ -15,6 +15,8 @@ if (weatherForm) {
             response.json().then((data) =>{
                 messageone.textContent = 'Loading....'
                 messagetwo.textContent = ''
+                messagethree.textContent = ''
+                messagefour.textContent = ''
             if (data.error){
                 messageone.textContent = 'Data Error '
                 messagetwo.textContent = 'Actual error is' + data.error
