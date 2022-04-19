@@ -18,7 +18,7 @@ if (weatherForm) {
                 messagetwo.textContent = 'Actual error is' + data.error
                 console.log('data.error'+data.error)
             } else {
-                messagetwo.textContent = 'Forecast for Locaton is ' + data.location + ' :::: ' + data.forecast.description
+                 messagetwo.textContent = 'Forecast for Locaton is ' + data.location + ' :::: ' + data.forecast.description
                 //messagetwo.textContent = 'Forcast is => ' + data.forecast.description
                 console.log('forecast ' + data.forecast.description)
                 console.log('Location ' + data.location)
